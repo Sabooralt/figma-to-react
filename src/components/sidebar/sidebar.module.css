@@ -89,9 +89,22 @@
 .logo_heading > h1 {
   font-size: 24px;
 }
+.badge_select {
+  width: fit-content;
+  padding: 2px 5px;
+  background-color: #effbff;
+  border-radius: 40px;
+  font-size: small;
+  color: #003f52;
+}
 .badge {
+  width: fit-content;
   padding: 5px 10px;
   background-color: #effbff;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
   border-radius: 40px;
   font-size: small;
   color: #003f52;
@@ -172,13 +185,22 @@
 .first_content {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+
   align-items: center;
+}
+
+.first_content > h1 {
+  font-weight: 600;
+
+  margin-right: auto;
 }
 
 .second_content {
   width: fit-content;
+  font-weight: 400;
   position: relative;
-  margin: 0 auto;
+  left: 38px;
 }
 .svg_color {
   color: #003f52;

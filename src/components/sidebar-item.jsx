@@ -25,10 +25,36 @@ export const SidebarItem = ({ item, selected, index }) => {
         </div>
         <h1>{item.title}</h1>
 
-        <div className={styles.badge}>{item.badge}</div>
+        {item.badge === "PDF" ? (
+          <select className={styles.badge_select}>
+            <option defaultValue={item.badge}>{item.badge}</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+          </select>
+        ) : (
+          <div className={styles.badge}>{item.badge}</div>
+        )}
       </div>
-
       <p className={styles.second_content}>{item.desc}</p>
+
     </div>
+  );
+};
+
+export const DownButton = () => {
+  return (
+    <svg
+      width="12"
+      height="7"
+      viewBox="0 0 12 7"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.50049 0.847839L6.19614 5.15219L10.5005 0.847839"
+        stroke="#023C53"
+        stroke-width="2"
+      />
+    </svg>
   );
 };
