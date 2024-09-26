@@ -1,0 +1,30 @@
+
+.top-bar {
+  background-color: #459e97;
+  padding: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-bar-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 10px;
+}
+.top-bar-help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  gap: 5px;
+}
+.top-bar-text > h1 {
+  font-size: 24px;
+}
+.top-bar-text > p {
+  font-size: 20px;
+  color: #e8e8e8;
+}
